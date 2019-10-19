@@ -2,7 +2,7 @@
 
 <h3>Selecciona la comida que quieres</h3>
 
-<h4>Productos que quiero (maximo 3):</h4>
+<h4>Productos que quiero (maximo {{productLimit}}):</h4>
 <h5 *ngFor="let productSelected of selectedProducts">
   {{productSelected.name}} <button (click)="removeSelection(productSelected)"> Eliminar</button>
 </h5>
