@@ -1,5 +1,7 @@
-<h2>BIENVENIDO</h2>
+<div *ngIf="showLoader" class="loader"></div>
+<div *ngIf="!showLoader" >
 
+<h2>BIENVENIDO {{userName.toLocaleUpperCase()}}</h2>
 <h3>Selecciona la comida que quieres</h3>
 
 <h4>Productos que quiero (maximo {{productLimit}}):</h4>
@@ -32,3 +34,4 @@
 </div>
 
 <span *ngIf="showMessageTime" style="color: red">{{messageTime}}</span>
+</div>
